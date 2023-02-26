@@ -3,13 +3,14 @@ package com.devsuperior.dslearnbds.entities;
 import com.devsuperior.dslearnbds.entities.enums.ResourceType;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tb_resource")
-public class Resource {
+public class Resource implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
