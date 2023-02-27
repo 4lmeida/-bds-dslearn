@@ -45,6 +45,8 @@ INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, du
 INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/4lmeida/challenge-crypter-ONE', TIMESTAMP WITH TIME ZONE '2023-09-22T19:03:00Z', 1, 'Parabéns, muito bom', 5, 1, 1, 1);
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/4lmeida/challenge-crypter-ONE', TIMESTAMP WITH TIME ZONE '2023-10-22T17:15:00Z', 1, 'Parabéns, muito bom', 7, 2, 1, 1);
 
 
 
