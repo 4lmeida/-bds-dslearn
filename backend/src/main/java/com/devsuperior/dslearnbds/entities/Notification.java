@@ -82,6 +82,7 @@ public class Notification implements Serializable {
         this.user = user;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -90,6 +90,8 @@ public class Reply implements Serializable {
         this.author = author;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

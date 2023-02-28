@@ -40,7 +40,7 @@ public class Topic implements Serializable {
     private List<Reply> replies = new ArrayList<>();
 
     @ManyToOne
-    @JoinColumn(name = "answer_id")
+    @JoinColumn(name = "reply_id")
     private Reply answer;
 
     public Topic() {

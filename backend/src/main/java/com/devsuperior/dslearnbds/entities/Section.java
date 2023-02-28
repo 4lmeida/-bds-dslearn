@@ -99,6 +99,10 @@ public class Section implements Serializable {
         this.prerequisite = prerequisite;
     }
 
+    public List<Lesson> getLessons() {
+        return lessons;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
