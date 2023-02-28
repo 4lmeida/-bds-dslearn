@@ -13,8 +13,9 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Muito bom, atividade nota 10', TIMESTAMP WITH TIME ZONE '2023-04-21T09:30:00Z', false,'Via email', 1);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Desta vez a tarefa não está correta', TIMESTAMP WITH TIME ZONE '2023-05-21T12:10:00Z', false,'Via email e discord', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Muito bom, atividade nota 10', TIMESTAMP WITH TIME ZONE '2023-04-21T09:30:00Z', true,'/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Desta vez a tarefa não está correta', TIMESTAMP WITH TIME ZONE '2023-05-21T12:10:00Z', true, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Desta vez a tarefa não está correta', TIMESTAMP WITH TIME ZONE '2023-05-21T12:10:00Z', true,'/offers/1/resource/1/sections/1', 1);
 
 INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('BootCamp React', 'https://www.publicdomainpictures.net/pictures/270000/nahled/training-course-training-online.jpg', 'https://www.publicdomainpictures.net/pictures/190000/nahled/travel-background-1469438300Bbk.jpg');
 
@@ -48,7 +49,15 @@ INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/4lmeida/challenge-crypter-ONE', TIMESTAMP WITH TIME ZONE '2023-09-22T19:03:00Z', 1, 'Parabéns, muito bom', 5, 1, 1, 1);
 INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/4lmeida/challenge-crypter-ONE', TIMESTAMP WITH TIME ZONE '2023-10-22T17:15:00Z', 1, 'Parabéns, muito bom', 7, 2, 1, 1);
 
+INSERT INTO tb_topic (title, body, moment, lesson_id, offer_id, author_id, answer_id) VALUES ('OOP', 'É uma discussão muito complexa, mas da para resolver consultando as documentações no  javadoc', TIMESTAMP WITH TIME ZONE '2023-11-25T14:35:00Z', 1, 1, 3, null);
+INSERT INTO tb_topic (title, body, moment, lesson_id, offer_id, author_id, answer_id) VALUES ('Generics', 'Generics é um tópico complicado', TIMESTAMP WITH TIME ZONE '2023-12-14T10:14:00Z', 1, 1, 2, null);
 
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('O que realmente você está com dificuldade em OOP?', TIMESTAMP WITH TIME ZONE '2023-11-29T16:12:23Z', 1, 2);
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Eu ainda não cheguei nesse capítulo, mas tem uma galera que acompanha o canal do Nélio e ele explica isso muito bem', TIMESTAMP WITH TIME ZONE '2023-12-15T19:01:23Z', 2, 1);
 
+INSERT INTO tb_likes_topic (topic_id, user_id) VALUES (1, 2);
+INSERT INTO tb_likes_topic (topic_id, user_id) VALUES (2, 3);
 
+INSERT INTO tb_likes_reply (reply_id, user_id) VALUES (1, 3);
+INSERT INTO tb_likes_reply (reply_id, user_id) VALUES (2, 1);
 
