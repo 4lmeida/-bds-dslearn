@@ -20,7 +20,7 @@ public class WebSecurityConfig {
     private String jwtSecret;
 
     @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
+    BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 

@@ -6,6 +6,7 @@ import com.devsuperior.dslearnbds.entities.enums.DeliverStatus;
 import java.io.Serializable;
 
 public class DeliverDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
 
     private DeliverStatus status;
     private String feedback;

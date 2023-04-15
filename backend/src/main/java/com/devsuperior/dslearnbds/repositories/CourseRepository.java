@@ -1,9 +1,9 @@
 package com.devsuperior.dslearnbds.repositories;
 
-import com.devsuperior.dslearnbds.entities.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
+import com.devsuperior.dslearnbds.entities.Course;
+
+
 public interface CourseRepository extends JpaRepository<Course, Long> {
 }
